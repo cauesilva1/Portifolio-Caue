@@ -2,7 +2,7 @@
 
 ![Imagem do projeto finalizado](assets/images/portifolio-finalizado.png)
 
-<h4 align="center">Confira o projeto aqui: https://vercel.com/cauesilva1/portifolio</h4>
+<h4 align="center">Confira o projeto aqui: https://portifolio-gamma-liard-15.vercel.app/#home</h4>
 
 ---
 
