@@ -4,7 +4,7 @@ function projetos(section) {
       <div class="content">
       <div class="cards">
         <div class="card">
-          <h3>Orange Evolution</h3>
+          <h3>Mall store</h3>
           <div class="img-wrapper">
             <img
               src="./assets/images/Mall-shoes.png"
