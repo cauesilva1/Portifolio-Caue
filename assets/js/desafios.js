@@ -39,7 +39,7 @@ function desafios(section) {
             />
             <div class="buttons">
               <a
-                href="https://github.com/lucyanovidio/desafio-21-dias-codigo-rocketseat/tree/main/dia-1"
+                href="#"
                 target="_blank"
                 title="Repositório no Github"
               >
@@ -56,7 +56,7 @@ function desafios(section) {
                   />
                 </svg>
               </a>
-              <a href="https://github.com/lucyanovidio/desafio-21-dias-codigo-rocketseat/" 
+              <a href="#" 
               target="_blank"
               title="Ver Projeto">
                 <svg
@@ -86,7 +86,7 @@ function desafios(section) {
             />
             <div class="buttons">
               <a
-                href="https://github.com/lucyanovidio/desafio-21-dias-codigo-rocketseat/tree/main/dia-2"
+                href="#"
                 target="_blank"
                 title="Repositório no Github"
               >
@@ -104,7 +104,7 @@ function desafios(section) {
                 </svg>
               </a>
               <a
-                href="https://lucyanovidio.github.io/desafio-21-dias-codigo-rocketseat/dia-2/"
+                href="#"
                 target="_blank"
                 title="Ver Projeto"
               >
