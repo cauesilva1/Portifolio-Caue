@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     template: "%s · Caue Silva",
   },
   description:
-    "Front-end Developer in Toronto. React, Next.js, TypeScript. Open to full-time roles — on-site or remote.",
+    "Front-end Developer in Toronto. React, Next.js, TypeScript. Currently shipping at Consultarer. Open to new opportunities.",
   keywords: [
     "Front-end Developer",
     "React",
@@ -29,12 +29,13 @@ export const metadata: Metadata = {
     "TypeScript",
     "Toronto",
     "Caue Silva",
+    "Consultarer",
   ],
   authors: [{ name: "Caue Silva" }],
   openGraph: {
     title: "Caue Silva — Front-end Developer",
     description:
-      "Building clear, fast interfaces with React and Next.js. Based in Toronto.",
+      "Front-end Developer in Toronto shipping with React and Next.js. Open to new opportunities.",
     type: "website",
     url: "https://portifolio-caue.vercel.app",
     siteName: "Caue Silva",

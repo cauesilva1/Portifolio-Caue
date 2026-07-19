@@ -15,7 +15,7 @@ export function About() {
         >
           <p className="text-sm tracking-wide text-accent">About</p>
           <h2 className="mt-3 font-display text-4xl font-bold tracking-[-0.04em] md:text-5xl">
-            Building interfaces that feel intentional
+            Product-minded front-end in Toronto
           </h2>
         </motion.div>
 

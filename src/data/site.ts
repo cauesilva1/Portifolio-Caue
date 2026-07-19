@@ -3,9 +3,9 @@ export const site = {
   brand: "Caue",
   role: "Front-end Developer",
   location: "Toronto, ON",
-  availability: "Open to full-time — on-site or remote",
-  heroLine: "Clear, fast interfaces with personality.",
-  email: "Cauecatonesilva@gmail.com",
+  availability: "Open to new opportunities — on-site or remote",
+  heroLine: "Shipping responsive, product-driven interfaces.",
+  email: "cauecatonesilva@gmail.com",
   phoneDisplay: "+1 519 918 6506",
   phoneTel: "+15199186506",
   whatsapp: "15199186506",
@@ -17,11 +17,44 @@ export const site = {
     instagram: "https://www.instagram.com/cauecsilva",
   },
   about: [
-    "I'm Caue Catone Silva — a Front-end Developer based in Toronto, building web products with React, Next.js, and TypeScript.",
-    "I care about clean UI, solid UX, and shipping interfaces that feel fast and intentional. Recently I've been shipping multi-sport analytics, browser games, and SaaS tools end to end.",
-    "I'm looking for a full-time role (on-site or remote) where I can grow as a front-end engineer and keep shipping real product.",
+    "I'm Caue Catone Silva — a Front-end Developer in Toronto building responsive, user-focused apps with React, Next.js, and TypeScript.",
+    "At Consultarer I ship real user-facing features, dynamic dashboards, and reusable UI systems while collaborating closely with backend teams.",
+    "I also keep building personal products end to end — analytics platforms, browser games, and SaaS tools — with a strong Node.js and SQL foundation.",
   ],
 } as const;
+
+export type Experience = {
+  role: string;
+  company: string;
+  period: string;
+  location: string;
+  points: string[];
+};
+
+export const experience: Experience[] = [
+  {
+    role: "Front-end Developer",
+    company: "Consultarer",
+    period: "May 2025 – Present",
+    location: "Remote, Canada",
+    points: [
+      "Build and ship responsive features with React, Next.js, and TypeScript.",
+      "Implement dynamic dashboards with real-time API integration.",
+      "Design reusable component systems and optimize UI performance across devices.",
+    ],
+  },
+  {
+    role: "Junior Software Developer",
+    company: "Oi",
+    period: "Oct 2021 – Dec 2023",
+    location: "Brazil",
+    points: [
+      "Developed and maintained RESTful APIs with Node.js and Prisma.",
+      "Designed relational schemas in MySQL and SQL Server.",
+      "Supported front-end integration through clear API design and documentation.",
+    ],
+  },
+];
 
 export type Project = {
   title: string;
@@ -37,7 +70,7 @@ export const projects: Project[] = [
   {
     title: "OmniScout",
     blurb:
-      "Multi-sport intelligence platform for soccer and basketball — scouting, rankings, dashboards, and automated data sync.",
+      "Multi-sport scouting platform for soccer and basketball — rankings, dashboards, filters, and automated ESPN data sync.",
     stack: ["Next.js", "TypeScript", "Prisma", "Supabase"],
     liveUrl: "https://football-intelligence-plataform-8u9.vercel.app",
     repoUrl: "https://github.com/cauesilva1/Football-intelligence-plataform",
@@ -47,7 +80,7 @@ export const projects: Project[] = [
   {
     title: "Lenda da Quadra",
     blurb:
-      "Browser basketball career simulator — steal NBA legend attributes, build your identity, and compete for titles.",
+      "Browser basketball career sim — steal NBA legend attributes, craft an identity, and compete for titles.",
     stack: ["Next.js", "TypeScript", "Prisma"],
     liveUrl: "https://lenda-da-quadra.vercel.app",
     repoUrl: "https://github.com/cauesilva1/LendaDaQuadra",
@@ -57,7 +90,7 @@ export const projects: Project[] = [
   {
     title: "Geracional",
     blurb:
-      "Football manager in the browser — real squads, transfer budgets, salary caps, and club reconstruction.",
+      "Football manager in the browser — real squads, transfer budgets, salary caps, and club rebuild loops.",
     stack: ["Next.js", "TypeScript"],
     liveUrl: "https://geracional-do-campo.vercel.app",
     repoUrl: "https://github.com/cauesilva1/GeracionalDoCampo",
@@ -67,7 +100,7 @@ export const projects: Project[] = [
   {
     title: "Job Tracker SaaS",
     blurb:
-      "Job application tracker with auth, dashboard analytics, status pipelines, and auto-extraction from job boards.",
+      "Application tracker with auth, role-aware UI, interactive dashboards, and reusable component architecture.",
     stack: ["Next.js", "TypeScript", "Supabase", "PostgreSQL"],
     liveUrl: "https://job-tracker-saas-five.vercel.app",
     repoUrl: "https://github.com/cauesilva1/Job-Tracker-SaaS",
@@ -77,7 +110,7 @@ export const projects: Project[] = [
   {
     title: "ProjectMatch",
     blurb:
-      "Platform that matches developers with open-source projects — GitHub auth, project discovery, and issue exploration.",
+      "Open-source matching platform — GitHub auth, project discovery, issue exploration, and responsive UI.",
     stack: ["Next.js", "TypeScript", "Firebase", "GitHub API"],
     liveUrl: "https://projetcmatch-client.vercel.app",
     repoUrl: "https://github.com/cauesilva1/projetcmatch-client",
@@ -87,7 +120,7 @@ export const projects: Project[] = [
   {
     title: "Reflexão Diária",
     blurb:
-      "AI-powered daily reflections — biblical or psychological — with auth, multilingual support, and saved history.",
+      "AI daily reflections (biblical or psychological) with auth, multilingual support, and saved history.",
     stack: ["Next.js", "FastAPI", "Supabase", "OpenAI"],
     liveUrl: "https://reflex-o-diaria.vercel.app/login",
     repoUrl: "https://github.com/cauesilva1/reflex-o-Diaria",
@@ -97,7 +130,7 @@ export const projects: Project[] = [
   {
     title: "Ticket Generator",
     blurb:
-      "University project that generates personalized tickets from GitHub profile data for campus events.",
+      "Campus event tool that generates personalized tickets from GitHub profile data.",
     stack: ["HTML", "CSS", "JavaScript"],
     liveUrl: "https://ticket-generate.vercel.app",
     repoUrl: "https://github.com/cauesilva1/Ticket-Generate",
@@ -109,20 +142,21 @@ export const projects: Project[] = [
 export const skillGroups = [
   {
     label: "Front-end",
-    items: ["React", "Next.js", "TypeScript", "JavaScript", "Tailwind CSS", "HTML/CSS"],
+    items: ["React", "Next.js", "TypeScript", "JavaScript", "Tailwind CSS", "HTML5", "CSS3"],
   },
   {
-    label: "Back-end & data",
-    items: ["Node.js", "Supabase", "Firebase", "Prisma", "PostgreSQL"],
+    label: "Back-end foundation",
+    items: ["Node.js", "REST APIs", "Prisma", "Supabase", "Firebase"],
   },
   {
-    label: "Product & tooling",
-    items: ["Git", "Vercel", "REST APIs", "Auth (OAuth)", "Responsive UI"],
+    label: "Data & tooling",
+    items: ["PostgreSQL", "MySQL", "SQL Server", "Git", "CI/CD", "Agile"],
   },
 ] as const;
 
 export const nav = [
   { href: "#about", label: "About" },
+  { href: "#experience", label: "Experience" },
   { href: "#projects", label: "Projects" },
   { href: "#skills", label: "Skills" },
   { href: "#contact", label: "Contact" },
