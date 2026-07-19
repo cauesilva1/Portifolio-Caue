@@ -69,7 +69,7 @@ export const projects: Project[] = [
     blurb:
       "Job application tracker with auth, dashboard analytics, status pipelines, and auto-extraction from job boards.",
     stack: ["Next.js", "TypeScript", "Supabase", "PostgreSQL"],
-    liveUrl: "https://job-tracker-saas.vercel.app",
+    liveUrl: "https://job-tracker-saas-five.vercel.app",
     repoUrl: "https://github.com/cauesilva1/Job-Tracker-SaaS",
     image: "/images/projects/job-tracker.jpg",
     group: "other",
