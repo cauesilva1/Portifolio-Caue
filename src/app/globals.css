@@ -1,0 +1,64 @@
+@import "tailwindcss";
+
+:root {
+  --bg: #0a0a0b;
+  --bg-elevated: #141416;
+  --fg: #f4f3ef;
+  --muted: #8f8e89;
+  --line: rgba(244, 243, 239, 0.1);
+  --accent: #c8f06c;
+  --accent-soft: rgba(200, 240, 108, 0.12);
+  --glow: rgba(90, 170, 150, 0.22);
+}
+
+@theme inline {
+  --color-bg: var(--bg);
+  --color-bg-elevated: var(--bg-elevated);
+  --color-fg: var(--fg);
+  --color-muted: var(--muted);
+  --color-line: var(--line);
+  --color-accent: var(--accent);
+  --color-accent-soft: var(--accent-soft);
+  --font-sans: var(--font-body);
+  --font-display: var(--font-display);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--bg);
+  color: var(--fg);
+  font-family: var(--font-body), system-ui, sans-serif;
+  text-rendering: optimizeLegibility;
+}
+
+::selection {
+  background: var(--accent);
+  color: #0a0a0b;
+}
+
+.font-display {
+  font-family: var(--font-display), system-ui, sans-serif;
+}
+
+.atmosphere {
+  background:
+    radial-gradient(ellipse 55% 45% at 88% 18%, var(--glow), transparent 60%),
+    radial-gradient(ellipse 40% 35% at 8% 90%, rgba(200, 240, 108, 0.07), transparent 55%),
+    var(--bg);
+}
+
+.hairline {
+  height: 1px;
+  background: var(--line);
+}
+
+.brand-name {
+  font-family: var(--font-display), system-ui, sans-serif;
+  font-weight: 800;
+  letter-spacing: -0.06em;
+  line-height: 0.82;
+  text-wrap: balance;
+}
