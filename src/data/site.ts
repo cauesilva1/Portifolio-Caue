@@ -19,7 +19,7 @@ export const site = {
   about: [
     "I'm Caue Catone Silva — a Front-end Developer in Toronto building responsive, user-focused apps with React, Next.js, and TypeScript.",
     "At Consultarer I ship real user-facing features, dynamic dashboards, and reusable UI systems while collaborating closely with backend teams.",
-    "I also keep building personal products end to end — analytics platforms, browser games, and SaaS tools — with a strong Node.js and SQL foundation.",
+    "I also keep building personal products end to end — analytics platforms, open-source tools, and a pixel-art companion for iOS — with a strong Node.js and SQL foundation.",
   ],
 } as const;
 
@@ -88,14 +88,23 @@ export const projects: Project[] = [
     group: "featured",
   },
   {
-    title: "Geracional",
+    title: "Companion",
     blurb:
-      "Football manager in the browser — real squads, transfer budgets, salary caps, and club rebuild loops.",
-    stack: ["Next.js", "TypeScript"],
-    liveUrl: "https://geracional-do-campo.vercel.app",
-    repoUrl: "https://github.com/cauesilva1/GeracionalDoCampo",
-    image: "/images/projects/geracional.jpg",
+      "Pixel-art companion for iPhone — personality, dynamic sky, home-screen widgets, and cloud-first life simulation on Supabase.",
+    stack: ["Swift", "iOS", "Supabase", "Widgets"],
+    repoUrl: "https://github.com/cauesilva1/Companion-App",
+    image: "/images/projects/companion.png",
     group: "featured",
+  },
+  {
+    title: "Contribly",
+    blurb:
+      "Open-source matchmaking — discover repos, swipe interest, match with maintainers, and continue the conversation in-app.",
+    stack: ["Next.js", "TypeScript", "Prisma", "Supabase"],
+    liveUrl: "https://contribly.vercel.app",
+    repoUrl: "https://github.com/cauesilva1/contribly",
+    image: "/images/projects/contribly.jpg",
+    group: "other",
   },
   {
     title: "Job Tracker SaaS",
@@ -105,16 +114,6 @@ export const projects: Project[] = [
     liveUrl: "https://job-tracker-saas-five.vercel.app",
     repoUrl: "https://github.com/cauesilva1/Job-Tracker-SaaS",
     image: "/images/projects/job-tracker.jpg",
-    group: "other",
-  },
-  {
-    title: "ProjectMatch",
-    blurb:
-      "Open-source matching platform — GitHub auth, project discovery, issue exploration, and responsive UI.",
-    stack: ["Next.js", "TypeScript", "Firebase", "GitHub API"],
-    liveUrl: "https://projetcmatch-client.vercel.app",
-    repoUrl: "https://github.com/cauesilva1/projetcmatch-client",
-    image: "/images/projects/projectmatch.jpg",
     group: "other",
   },
   {
