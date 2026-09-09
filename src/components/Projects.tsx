@@ -21,7 +21,7 @@ function ProjectRow({
       transition={{ duration: 0.45, delay: index * 0.05 }}
       className="group relative border-t border-line py-8 transition-colors last:border-b hover:bg-accent-soft/30"
     >
-      <div className="grid gap-6 md:grid-cols-[auto_1fr_auto] md:items-center md:gap-8">
+      <div className="grid gap-6 md:grid-cols-[auto_minmax(0,1fr)_220px] md:items-center md:gap-8">
         <span className="font-display text-sm font-semibold tabular-nums text-muted transition-colors group-hover:text-accent">
           {number}
         </span>
@@ -37,13 +37,13 @@ function ProjectRow({
           </div>
           <p className="mt-3 max-w-2xl text-muted">{project.blurb}</p>
 
-          <div className="mt-4 flex flex-wrap gap-4 md:hidden">
+          <div className="mt-4 flex flex-wrap gap-4">
             {project.liveUrl && (
               <a
                 href={project.liveUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-sm text-accent"
+                className="text-sm text-accent underline-offset-4 transition hover:underline"
               >
                 Live →
               </a>
@@ -53,7 +53,7 @@ function ProjectRow({
                 href={project.repoUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-sm text-muted"
+                className="text-sm text-muted underline-offset-4 transition hover:text-fg hover:underline"
               >
                 Code →
               </a>
@@ -61,55 +61,18 @@ function ProjectRow({
           </div>
         </div>
 
-        <div className="relative hidden items-center gap-6 md:flex">
-          {project.image && (
-            <div className="relative h-24 w-40 overflow-hidden opacity-0 shadow-2xl transition-all duration-300 group-hover:opacity-100 group-hover:scale-105">
-              <Image
-                src={project.image}
-                alt=""
-                fill
-                className="object-cover object-top"
-                sizes="160px"
-              />
-            </div>
-          )}
-          <div className="flex flex-col items-end gap-2">
-            {project.liveUrl && (
-              <a
-                href={project.liveUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-sm text-accent underline-offset-4 transition group-hover:underline"
-              >
-                Live →
-              </a>
-            )}
-            {project.repoUrl && (
-              <a
-                href={project.repoUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-sm text-muted underline-offset-4 transition hover:text-fg group-hover:underline"
-              >
-                Code →
-              </a>
-            )}
+        {project.image && (
+          <div className="relative aspect-[16/10] w-full overflow-hidden border border-line md:aspect-auto md:h-28 md:w-[220px]">
+            <Image
+              src={project.image}
+              alt={`${project.title} preview`}
+              fill
+              className="object-cover object-top transition-transform duration-300 group-hover:scale-[1.03]"
+              sizes="(max-width: 768px) 100vw, 220px"
+            />
           </div>
-        </div>
+        )}
       </div>
-
-      {/* Mobile preview under content */}
-      {project.image && (
-        <div className="relative mt-5 aspect-[16/9] max-w-md overflow-hidden border border-line md:hidden">
-          <Image
-            src={project.image}
-            alt={`${project.title} preview`}
-            fill
-            className="object-cover object-top"
-            sizes="(max-width: 768px) 100vw, 400px"
-          />
-        </div>
-      )}
     </motion.article>
   );
 }

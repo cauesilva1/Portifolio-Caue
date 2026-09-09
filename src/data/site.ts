@@ -78,13 +78,13 @@ export const projects: Project[] = [
     group: "featured",
   },
   {
-    title: "Lenda da Quadra",
+    title: "Contribly",
     blurb:
-      "Browser basketball career sim — steal NBA legend attributes, craft an identity, and compete for titles.",
-    stack: ["Next.js", "TypeScript", "Prisma"],
-    liveUrl: "https://lenda-da-quadra.vercel.app",
-    repoUrl: "https://github.com/cauesilva1/LendaDaQuadra",
-    image: "/images/projects/lenda-da-quadra.jpg",
+      "Open-source matchmaking — discover repos, swipe interest, match with maintainers, and continue the conversation in-app.",
+    stack: ["Next.js", "TypeScript", "Prisma", "Supabase"],
+    liveUrl: "https://contribly.vercel.app",
+    repoUrl: "https://github.com/cauesilva1/contribly",
+    image: "/images/projects/contribly.jpg",
     group: "featured",
   },
   {
@@ -93,18 +93,8 @@ export const projects: Project[] = [
       "Pixel-art companion for iPhone — personality, dynamic sky, home-screen widgets, and cloud-first life simulation on Supabase.",
     stack: ["Swift", "iOS", "Supabase", "Widgets"],
     repoUrl: "https://github.com/cauesilva1/Companion-App",
-    image: "/images/projects/companion.png",
+    image: "/images/projects/companion.jpg",
     group: "featured",
-  },
-  {
-    title: "Contribly",
-    blurb:
-      "Open-source matchmaking — discover repos, swipe interest, match with maintainers, and continue the conversation in-app.",
-    stack: ["Next.js", "TypeScript", "Prisma", "Supabase"],
-    liveUrl: "https://contribly.vercel.app",
-    repoUrl: "https://github.com/cauesilva1/contribly",
-    image: "/images/projects/contribly.jpg",
-    group: "other",
   },
   {
     title: "Job Tracker SaaS",
