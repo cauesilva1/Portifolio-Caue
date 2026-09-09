@@ -67,7 +67,7 @@ function ProjectRow({
               src={project.image}
               alt={`${project.title} preview`}
               fill
-              className="object-cover object-top transition-transform duration-300 group-hover:scale-[1.03]"
+              className="object-cover object-center transition-transform duration-300 group-hover:scale-[1.03]"
               sizes="(max-width: 768px) 100vw, 220px"
             />
           </div>
