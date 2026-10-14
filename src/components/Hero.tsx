@@ -101,7 +101,7 @@ export function Hero() {
           <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-bg via-bg/10 to-transparent lg:bg-gradient-to-r lg:from-bg/80 lg:via-bg/20 lg:to-transparent" />
           <div className="absolute bottom-6 left-6 right-6 lg:bottom-8 lg:left-8">
             <p className="font-display text-2xl font-bold tracking-tight text-fg sm:text-3xl md:text-4xl">
-              Front-end
+              Software
             </p>
             <p className="mt-1 text-sm text-muted">React · Next.js · TypeScript</p>
           </div>

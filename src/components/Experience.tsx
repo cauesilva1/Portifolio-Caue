@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { experience } from "@/data/site";
+import { certification, education, experience } from "@/data/site";
 
 export function Experience() {
   return (
@@ -51,6 +51,26 @@ export function Experience() {
               </div>
             </motion.article>
           ))}
+        </div>
+
+        <div className="mt-16 grid gap-10 border-t border-line pt-12 md:grid-cols-2">
+          <div>
+            <p className="text-sm tracking-wide text-accent">Education</p>
+            <h3 className="mt-3 font-display text-2xl font-bold tracking-[-0.03em] text-fg">
+              {education.degree}
+            </h3>
+            <p className="mt-1 text-accent">{education.school}</p>
+            <p className="mt-3 text-sm text-muted">
+              {education.location} · {education.period}
+            </p>
+          </div>
+          <div>
+            <p className="text-sm tracking-wide text-accent">Certification</p>
+            <h3 className="mt-3 font-display text-2xl font-bold tracking-[-0.03em] text-fg">
+              {certification.name}
+            </h3>
+            <p className="mt-3 text-sm text-muted">{certification.period}</p>
+          </div>
         </div>
       </div>
     </section>

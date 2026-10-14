@@ -17,25 +17,25 @@ const body = Plus_Jakarta_Sans({
 export const metadata: Metadata = {
   metadataBase: new URL("https://portifolio-caue.vercel.app"),
   title: {
-    default: "Caue Silva — Front-end Developer",
+    default: "Caue Silva — Software Developer",
     template: "%s · Caue Silva",
   },
   description:
-    "Front-end Developer in Toronto. React, Next.js, TypeScript. Currently shipping at Consultarer. Open to new opportunities.",
+    "Software Developer in Toronto. React, Next.js, TypeScript. Currently shipping at Consultare Software. Seeking a junior role.",
   keywords: [
-    "Front-end Developer",
+    "Software Developer",
     "React",
     "Next.js",
     "TypeScript",
     "Toronto",
     "Caue Silva",
-    "Consultarer",
+    "Consultare Software",
   ],
   authors: [{ name: "Caue Silva" }],
   openGraph: {
-    title: "Caue Silva — Front-end Developer",
+    title: "Caue Silva — Software Developer",
     description:
-      "Front-end Developer in Toronto shipping with React and Next.js. Open to new opportunities.",
+      "Software Developer in Toronto, strongest in React, Next.js, and TypeScript. Seeking a junior role.",
     type: "website",
     url: "https://portifolio-caue.vercel.app",
     siteName: "Caue Silva",
@@ -50,7 +50,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Caue Silva — Front-end Developer",
+    title: "Caue Silva — Software Developer",
     description:
       "Building clear, fast interfaces with React and Next.js. Based in Toronto.",
     images: ["/og.jpg"],

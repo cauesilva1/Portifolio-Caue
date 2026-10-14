@@ -19,11 +19,11 @@ export function Skills() {
             What I work with
           </h2>
           <p className="mt-4 text-muted">
-            A concise stack map for recruiters — tools I use to ship production UI.
+            The stack from the resume — languages, frontend, backend, databases, and tools.
           </p>
         </motion.div>
 
-        <div className="grid gap-10 md:grid-cols-3">
+        <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-3">
           {skillGroups.map((group, index) => (
             <motion.div
               key={group.label}

@@ -1,10 +1,10 @@
 export const site = {
   name: "Caue Silva",
   brand: "Caue",
-  role: "Front-end Developer",
+  role: "Software Developer",
   location: "Toronto, ON",
-  availability: "Open to new opportunities — on-site or remote",
-  heroLine: "Shipping responsive, product-driven interfaces.",
+  availability: "Seeking a junior software developer role — on-site or remote",
+  heroLine: "Frontend and backend, strongest in React, Next.js, and TypeScript.",
   email: "cauecatonesilva@gmail.com",
   phoneDisplay: "+1 519 918 6506",
   phoneTel: "+15199186506",
@@ -17,9 +17,9 @@ export const site = {
     instagram: "https://www.instagram.com/cauecsilva",
   },
   about: [
-    "I'm Caue Catone Silva — a Front-end Developer in Toronto building responsive, user-focused apps with React, Next.js, and TypeScript.",
-    "At Consultarer I ship real user-facing features, dynamic dashboards, and reusable UI systems while collaborating closely with backend teams.",
-    "I also keep building personal products end to end — analytics platforms, open-source tools, and a pixel-art companion for iOS — with a strong Node.js and SQL foundation.",
+    "I'm Caue Catone Silva — a software developer in Toronto, strongest in React, Next.js, and TypeScript, with experience across frontend and backend.",
+    "At Consultare Software I build web interfaces for a pre-launch startup, including dashboard screens and reusable component sets, and work with backend engineers on API contracts.",
+    "Before that I built internal tooling at Oi — dashboards, a log viewer, and the Node.js and SQL services behind them — plus public projects like Contribly and OmniScout.",
   ],
 } as const;
 
@@ -33,14 +33,13 @@ export type Experience = {
 
 export const experience: Experience[] = [
   {
-    role: "Front-end Developer",
-    company: "Consultarer",
+    role: "Frontend Developer, Contract",
+    company: "Consultare Software",
     period: "May 2025 – Present",
-    location: "Remote, Canada",
+    location: "Remote",
     points: [
-      "Build and ship responsive features with React, Next.js, and TypeScript.",
-      "Implement dynamic dashboards with real-time API integration.",
-      "Design reusable component systems and optimize UI performance across devices.",
+      "Build web interfaces for a pre-launch startup with React, Next.js, and TypeScript, including dashboard screens and reusable component sets.",
+      "Work with backend engineers to define API contracts and integrate frontend modules across core dashboard workflows.",
     ],
   },
   {
@@ -49,12 +48,25 @@ export const experience: Experience[] = [
     period: "Oct 2021 – Dec 2023",
     location: "Brazil",
     points: [
-      "Developed and maintained RESTful APIs with Node.js and Prisma.",
-      "Designed relational schemas in MySQL and SQL Server.",
-      "Supported front-end integration through clear API design and documentation.",
+      "Built visual dashboards for the internal engineering team showing microservices activity across services.",
+      "Mapped API relationships across microservices so the team could see which API handled each request.",
+      "Built a log viewer the team used to trace issues across services.",
+      "Maintained SQL Server and MySQL schemas and Node.js and Express endpoints behind these internal tools.",
     ],
   },
 ];
+
+export const education = {
+  school: "FASIPE",
+  degree: "Associate Degree in Analysis and Systems Development",
+  period: "2023",
+  location: "Brazil",
+} as const;
+
+export const certification = {
+  name: "AWS Partner: AWS Well Architected Proficient",
+  period: "Issued Oct 2023",
+} as const;
 
 export type Project = {
   title: string;
@@ -130,16 +142,24 @@ export const projects: Project[] = [
 
 export const skillGroups = [
   {
-    label: "Front-end",
-    items: ["React", "Next.js", "TypeScript", "JavaScript", "Tailwind CSS", "HTML5", "CSS3"],
+    label: "Languages",
+    items: ["TypeScript", "JavaScript", "Python", "HTML", "CSS"],
   },
   {
-    label: "Back-end foundation",
-    items: ["Node.js", "REST APIs", "Prisma", "Supabase", "Firebase"],
+    label: "Frontend",
+    items: ["React", "React Native", "Next.js", "Tailwind CSS"],
   },
   {
-    label: "Data & tooling",
-    items: ["PostgreSQL", "MySQL", "SQL Server", "Git", "CI/CD", "Agile"],
+    label: "Backend",
+    items: ["Node.js", "Express", "REST APIs", "JWT authentication"],
+  },
+  {
+    label: "Databases",
+    items: ["PostgreSQL", "MySQL", "SQL Server", "Supabase", "Prisma"],
+  },
+  {
+    label: "Tools",
+    items: ["Git", "CI/CD", "Agile"],
   },
 ] as const;
 
